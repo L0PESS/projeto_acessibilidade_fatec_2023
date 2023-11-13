@@ -5,65 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Acessibilidade</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
-<body>
-    <header>
+<body class="center">
+    <header id="header" class="center">
         <div id="headerLogo">
-            <img src="" alt="">
+            <img src="./icon/logo.png" alt="">
         </div>
-        <nav>
-            <ol>
-                <li>SOBRE MIM</li>
-                <li>FORMAÇÃO</li>
+        <nav id="headerNav" >
+            <ol class="center">
+                <li><a href="#sobreMim">SOBRE MIM</a></li>
+                <li><a href="#formacao">FORMAÇÃO</a></li>
             </ol>
         </nav>
     </header>
     <main>
-        <section id="minhasInformacoes">
-            <div>
+        <section id="minhasInformacoes" class="center">
+            <div id="infoText" class="center">
                 <h1>LEANDRO H. LOPES FERREIRA</h1>
-                <p>DESENVOLVEDOR FRONT-END</p>
-                <p>ESTUDANTE DO 2° SEMESTRE DE SISTEMAS PARA INTERNET  DE 2023</p>
+                <p id="Dev">DESENVOLVEDOR FRONT-END</p>
+                <p id="cargo">ESTUDANTE DO 2° SEMESTRE DE SISTEMAS PARA INTERNET  DE 2023</p>
             </div>
             <div id="foto">
-                <img src="" alt="">
+                <img src="./icon/logo.png" alt="">                  
             </div>
         </section>
-        <section id="sobreMim">
-            <div><h2>SOBRE MIM</h2></div>
-            <div>
-                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi enim incidunt exercitationem cumque ex dignissimos tempore quo, eveniet reiciendis harum amet nihil magnam dolor atque saepe deserunt numquam nam ipsa?</P>
+        <section id="sobreMim" class="center">
+            <div id="sobreMimH2" class="center"><h2>SOBRE MIM</h2></div>
+            <div id="sobreMimInfo" class="center">
+                <P>Oi, meu nome é Leandro tenho 19 anos e sou estudante do curso superior SISTEMAS PARA INTERNET.
+                Tenho interesse em programação, atualmente busco aprimorar principalmente o front-end!
+                </P>
             </div>
         </section>
-        <section id="formacao">
-            <div><h2>FORMAÇÔES</h2></div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <section id="formacao" class="center">
+            <div id="formacaoH2" class="center"><h2>FORMAÇÕES</h2></div>
+            <div id="formacaoInfo" class="center">
+                <div id="fatecSI" class="center  formW">
+                    <p>FATEC - TAQUARITINGA</p>
+                    <p>SISTEMAS P/ INTERNET</p>
+                    <p>08/02/2023 -- 12/2025</p>
+                    <p>CURSANDO</p>
+                </div>
+                <div id="etecDS" class="center  formW">
+                    <p>ETEC - TAQUARITINGA</p>
+                    <p>DESENVOLVIMENTO DE SIS-<br>TEMAS</p>
+                    <p>08/02/2023 -- 30/06/2023</p>
+                    <p>COMPLETO</p>
+                </div>
+                <div id="etecInfo" class="center  formW">
+                    <p>ETEC - TAQUARITINGA</p>
+                    <p>INFORMATICA P/ INTERNET</p>
+                    <p>08/08/2021 -- 30/12/2022</p>
+                    <p>COMPLETO</p>
+                </div>
+                <div id="medio" class="center  formW">
+                    <p>E.E. RIZZIERI POLETTI</p>
+                    <p>ENSINO MEDIO</p>
+                    <p>08/02/2019 -- 30/12/2021</p>
+                    <p>COMPLETO</p>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer" class="center">
         <div id="footerLogo">
-            <img src="" alt="">
+            <img src="./icon/logo.png" alt="">  
         </div>
         <div id="infoFooter">
-            <nav>
+            <nav class="center">
                 <div id="visite">
+                    <h3>VISITE</h3>
                     <ol>
                         <li>SOBRE MIM</li>
                         <li>FORMAÇÕES</li>
                     </ol>
                 </div>
                 <div id="contatos">
+                    <h3>CONTATOS</h3>
                     <ol>
                         <li><a href="mailto:lelopes236@gmail.com">lelopes236@gmail.com</a></li>
                         <li><a href="tel:34991111024">(34) 991111024</a></li>
                     </ol>
                 </div>
                 <div id="redes">
+                    <h3>REDES SOCIAIS</h3>
                     <ol>
                         <li>insta</li>
                         <li>github</li>
