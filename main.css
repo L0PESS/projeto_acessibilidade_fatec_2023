@@ -23,7 +23,7 @@ a{
     width: 25%;
 }
 body{
-    background-image: linear-gradient(180deg,#00FF38,#00811C,#00390D);
+    background-image: linear-gradient(0deg,#00390D,#00811C,#00FF38);
 }
 #header{
     width: 80%;
@@ -81,12 +81,16 @@ h1{
     font-size: 2em;
     background-color: #00390D;
     padding: 5px;
+    font-weight: 400;
     border-radius: 10px;
 }
 #cargo{
     font-size: 1.1em;
-    color: #00390D;
+    color: #122e19;
     font-weight: bold;
+}
+#foto img{
+    border-radius: 50%;
 }
 main{
     width: 80%;
@@ -95,12 +99,13 @@ main{
     margin: 140px 0 0 0;
     width: 100%;
     height: 250px;
-    background-color: #17802F;
+    background-color: #00390D;
     border-radius: 40px;
 }
 #sobreMimH2{
     width: 100%;
     height: 20%;
+    font-size: 1.3em;
     border-bottom:1px solid #00FF38;
 }
 #sobreMimInfo{
@@ -117,12 +122,13 @@ main{
     margin: 140px 0 0 0;
     width: 100%;
     height: 500px;
-    background-color: #17802F;
+    background-color: #00390D;
     border-radius: 40px;
 }
 #formacaoH2{
     width: 100%;
     height: 20%;
+    font-size: 1.3em;
     border-bottom:1px solid #00FF38;
 }
 #formacaoInfo{
@@ -140,7 +146,7 @@ main{
     font-size: 1.2em;
     font-weight: 500;
     /* letter-spacing: 2px; */
-    border: 1px solid #00390D;
+    border: 1px solid #00FF38;
     border-radius: 20px;
 }
 #footer{
@@ -166,7 +172,7 @@ main{
     align-items: center;
     justify-content: space-around;
 }
-#infoFooter nav > div > h3{
+#infoFooter nav > div > h4{
     font-size: 1.4em;
 }
 #infoFooter nav > div > ol {
