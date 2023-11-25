@@ -172,7 +172,7 @@ main{
     align-items: center;
     justify-content: space-around;
 }
-#infoFooter nav > div > h4{
+#infoFooter nav > div > h5{
     font-size: 1.4em;
 }
 #infoFooter nav > div > ol {
