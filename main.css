@@ -4,7 +4,7 @@
     box-sizing: border-box;
     color: #fff;
     position: relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 li{
     list-style-type: none;
@@ -199,4 +199,19 @@ path{
     height: 80%;
     font-size: 1.1em;
     width: 100%;
+}
+.buttonsZoom{
+    width: 100px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttonsZoom > button{
+    background-color: #122e19;
+    color: #fff;
+    width: 40%;
+    height: 70%;
+    border-radius: 10px;
+
 }

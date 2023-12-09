@@ -8,7 +8,7 @@
     <meta name="description" content="Portifolio feito para atividade da fatec, feito por leandro ferreira.">
     <link rel="stylesheet" href="./main.css">
 </head>
-<body class="center">
+<body class="center text">
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -26,6 +26,10 @@
                 <li><a href="#formacao">FORMAÇÃO</a></li>
             </ol>
         </nav>
+       <div class="buttonsZoom">
+        <button id="increaseBtn">+</button>
+        <button id="decreaseBtn">-</button>
+       </div>
     </header>
     <main>
         <section id="minhasInformacoes" class="center">
@@ -127,5 +131,37 @@
       position: 'R',
       avatar: 'random',
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    const textElements = document.querySelectorAll(".text");
+    const increaseBtn = document.getElementById("increaseBtn");
+    const decreaseBtn = document.getElementById("decreaseBtn");
+ 
+    let currentSize = 16; // Tamanho de fonte inicial em pixels
+    const maxSize = 24;   // Tamanho máximo de fonte permitido
+    const minSize = 12;   // Tamanho mínimo de fonte permitido
+ 
+    // Função para ajustar o tamanho da fonte
+    function adjustFontSize(size) {
+        textElements.forEach(function (element) {
+            element.style.fontSize = size + "px";
+        });
+    }
+ 
+    // Função para aumentar a fonte
+    increaseBtn.addEventListener("click", function () {
+        if (currentSize < maxSize) {
+            currentSize += 2;
+            adjustFontSize(currentSize);
+        }
+    });
+ 
+    // Função para diminuir a fonte
+    decreaseBtn.addEventListener("click", function () {
+        if (currentSize > minSize) {
+            currentSize -= 2;
+            adjustFontSize(currentSize);
+        }
+    });
+});
 </script>
 </html>
